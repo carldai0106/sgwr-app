@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+	<Button
+		android:id="@+id/btn_incident_setemail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/space_6"
+		android:background="@drawable/button_lablel_select"
+		android:text="@string/set_recipient_emails_for_incident_notifications"
+		android:textColor="@color/text_color" />
+	<Button
+		android:id="@+id/btn_incident_review"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btn_incident_setemail"
+		android:layout_marginBottom="@dimen/space_6"
+		android:layout_marginLeft="@dimen/space_6"
+		android:layout_marginRight="@dimen/space_6"
+		android:background="@drawable/button_lablel_select"
+		android:text="@string/incident_reviewed_and_approved_by"
+		android:textColor="@color/text_color" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/btn_incident_review"
+		android:orientation="vertical" >
+		<EditText
+			android:id="@+id/edit_incident_injury"
+			style="@style/multi_edit_text_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:hint="@string/description_of_observed_alleged_injury"
+			android:scrollbars="vertical" />
+		<EditText
+			android:id="@+id/edit_incident_where"
+			style="@style/multi_edit_text_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:hint="@string/where_did_it_happen_"
+			android:scrollbars="vertical" />
+		<EditText
+			android:id="@+id/edit_incident_caused"
+			style="@style/multi_edit_text_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:hint="@string/what_caused_the_incident_"
+			android:scrollbars="vertical" />
+		<EditText
+			android:id="@+id/edit_incident_memo"
+			style="@style/multi_edit_text_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1.2"
+			android:hint="@string/what_happened_"
+			android:scrollbars="vertical" />
+	</LinearLayout>
+</RelativeLayout>

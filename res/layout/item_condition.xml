@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listview_item_bg"
+	android:gravity="center_vertical"
+	android:padding="8dp" >
+	<TextView
+		android:id="@+id/text_condition"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="8dp"
+		android:text="Carl Dai"
+		android:textColor="@color/text_color"
+		android:textSize="@dimen/text_size_14" />
+	<TextView
+		android:id="@+id/text_description"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/text_condition"
+		android:text="cndy19850106@163.com"
+		android:textColor="@color/text_color"
+		android:textSize="@dimen/text_size_12" />
+	<ImageView
+		android:id="@+id/imageview_flag"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/text_description"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@+id/text_condition"
+		android:layout_marginRight="10dp"
+		android:src="@drawable/inactive" />
+</RelativeLayout>

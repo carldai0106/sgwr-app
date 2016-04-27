@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	
+	<include layout="@layout/header"/>
+	<!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->
+	<com.sgwr.app.widget.SlidingMenuLayout
+		android:id="@+id/sliding_menu_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal" >
+		<RelativeLayout
+			android:id="@+id/left_menu"
+			android:layout_width="180dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:background="#00ccff"
+			android:visibility="invisible" >
+			<ListView
+				android:id="@+id/slide_listview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:cacheColorHint="#00000000" >
+			</ListView>
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/right_menu"
+			android:layout_width="270dip"
+			android:layout_height="fill_parent"
+			android:layout_alignParentRight="true"
+			android:background="#00ffcc"
+			android:visibility="invisible" >
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/main_content_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="35.0dip"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<Button
+					android:id="@+id/btn_activity_open"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="@drawable/tab_button_bg_select"
+					android:text="@string/incident_open"
+					android:textColor="@drawable/tab_button_text_select" />
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:background="@drawable/button_cutline" />
+				<Button
+					android:id="@+id/btn_activity_closed"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="@drawable/tab_button_bg_select"
+					android:text="@string/incident_closed"
+					android:textColor="@drawable/tab_button_text_select" />
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:background="@drawable/button_cutline" />
+				<Button
+					android:id="@+id/btn_activity_all"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="@drawable/tab_button_bg_select"
+					android:text="@string/incident_all"
+					android:textColor="@drawable/tab_button_text_select" />
+			</LinearLayout>
+			<com.sgwr.app.widget.PullToRefreshListView
+				android:id="@+id/listview_activity"
+				style="@style/listview"
+				android:layout_weight="1"
+				android:cacheColorHint="@color/full_transparent" />
+			<include layout="@layout/main_footer" />
+		</LinearLayout>
+	</com.sgwr.app.widget.SlidingMenuLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="15dp"
+	android:background="@drawable/dialog_frame_bg" >
+	<RelativeLayout
+		android:id="@+id/dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="4dp"
+		android:background="@drawable/dialog_title_bg" >
+		<TextView
+			android:id="@+id/dialog_title_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:paddingBottom="8dp"
+			android:paddingTop="8dp"
+			android:text="Dialog Title"
+			android:textColor="@color/text_color"
+			android:textSize="14sp" />
+		<ImageButton
+			android:id="@+id/dialog_title_btn_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="6dp"
+			android:background="@drawable/dialog_close_select"
+			android:padding="12dp" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/dialog_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/dialog_title" >
+		<TextView
+			android:id="@+id/dialog_text_msg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="5dp"
+			android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+	</RelativeLayout>
+	<ImageView
+		android:id="@+id/dialog_split"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/dialog_content"
+		android:layout_margin="6dp"
+		android:background="#aaaaaa" />
+	<RelativeLayout
+		android:id="@+id/dialog_buttons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/dialog_split"
+		android:paddingBottom="12dp"
+		android:paddingTop="10dp" >
+		<Button
+			android:id="@+id/dialog_btn_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:layout_toLeftOf="@+id/dialog_btn_cancel"
+			android:background="@drawable/dialog_button_select"
+			android:paddingBottom="8dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="8dp"
+			android:text="OK"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+		<Button
+			android:id="@+id/dialog_btn_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dp"
+			android:background="@drawable/dialog_button_select"
+			android:paddingBottom="8dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="8dp"
+			android:text="Cancel"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+	</RelativeLayout>
+</RelativeLayout>

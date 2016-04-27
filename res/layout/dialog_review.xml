@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical|center_horizontal"
+	android:layout_margin="15dp"
+	android:background="@drawable/dialog_frame_bg"
+	android:paddingBottom="5.0dp" >
+	<RelativeLayout
+		android:id="@+id/dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="4dp"
+		android:background="@drawable/dialog_title_bg" >
+		<TextView
+			android:id="@+id/dialog_title_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:paddingBottom="8dp"
+			android:paddingTop="8dp"
+			android:text="Incident Reviewed and Approved By"
+			android:textColor="@color/text_color"
+			android:textSize="14sp" />
+		<ImageButton
+			android:id="@+id/dialog_title_btn_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="6dp"
+			android:background="@drawable/dialog_close_select"
+			android:padding="12dp" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/dialog_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/dialog_title"
+		android:paddingLeft="8.0dp"
+		android:paddingRight="8.0dp" >
+		<TextView
+			android:id="@+id/text_review_print1"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_print1"
+			android:layout_alignTop="@+id/edit_review_print1"
+			android:text="Print Name1" />
+		<EditText
+			android:id="@+id/edit_review_print1"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_marginTop="@dimen/space_4"
+			android:layout_toRightOf="@+id/text_review_print1" />
+		<TextView
+			android:id="@+id/text_review_signature1"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_signature1"
+			android:layout_alignTop="@+id/edit_review_signature1"
+			android:text="Signature1" />
+		<EditText
+			android:id="@+id/edit_review_signature1"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_print1"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_review_signature1" />
+		<TextView
+			android:id="@+id/text_review_title1"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_title1"
+			android:layout_alignTop="@+id/edit_review_title1"
+			android:text="Title1" />
+		<EditText
+			android:id="@+id/edit_review_title1"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_signature1"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_review_title1" />
+		<TextView
+			android:id="@+id/text_review_date1"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/layout_date1"
+			android:layout_alignTop="@+id/layout_date1"
+			android:text="Date1" />
+		<LinearLayout
+			android:id="@+id/layout_date1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_title1"
+			android:layout_toRightOf="@+id/text_review_date1" >
+			<EditText
+				android:id="@+id/edt_review_date1"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="8"
+				android:clickable="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:inputType="text"
+				android:textSize="@dimen/text_size_14" />
+			<ImageButton
+				android:id="@+id/imgbtn_review_delete1"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:layout_weight="1"
+				android:background="@drawable/all_corner_bg"
+				android:focusable="false"
+				android:src="@drawable/trash" />
+		</LinearLayout>
+		<TextView
+			android:id="@+id/text_review_print2"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_print2"
+			android:layout_alignTop="@+id/edit_review_print2"
+			android:text="Print Name2" />
+		<EditText
+			android:id="@+id/edit_review_print2"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/layout_date1"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_marginTop="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_review_print2" />
+		<TextView
+			android:id="@+id/text_review_signature2"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_signature2"
+			android:layout_alignTop="@+id/edit_review_signature2"
+			android:text="Signature2" />
+		<EditText
+			android:id="@+id/edit_review_signature2"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_print2"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_review_signature2" />
+		<TextView
+			android:id="@+id/text_review_title2"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_review_title2"
+			android:layout_alignTop="@+id/edit_review_title2"
+			android:text="Title2" />
+		<EditText
+			android:id="@+id/edit_review_title2"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_signature2"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_review_title2" />
+		<TextView
+			android:id="@+id/text_review_date2"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/layout_date2"
+			android:layout_alignTop="@+id/layout_date2"
+			android:text="Date2" />
+		<LinearLayout
+			android:id="@+id/layout_date2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_review_title2"
+			android:layout_toRightOf="@+id/text_review_date2" >
+			<EditText
+				android:id="@+id/edt_review_date2"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="8"
+				android:clickable="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:inputType="text"
+				android:textSize="@dimen/text_size_14" />
+			<ImageButton
+				android:id="@+id/imgbtn_review_delete2"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:layout_weight="1"
+				android:background="@drawable/all_corner_bg"
+				android:focusable="false"
+				android:src="@drawable/trash" />
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/dialog_buttons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/dialog_content"
+		android:gravity="center_horizontal"
+		android:paddingBottom="6dp"
+		android:paddingTop="16dp" >
+		<Button
+			android:id="@+id/dialog_btn_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="40dp"
+			android:background="@drawable/dialog_button_select"
+			android:paddingBottom="8dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="8dp"
+			android:text="Cancel"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+		<Button
+			android:id="@+id/dialog_btn_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/dialog_btn_cancel"
+			android:background="@drawable/dialog_button_select"
+			android:paddingBottom="8dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="8dp"
+			android:text="OK"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+	</RelativeLayout>
+</RelativeLayout>

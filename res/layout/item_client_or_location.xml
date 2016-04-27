@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listview_item_bg"
+	android:descendantFocusability="blocksDescendants"
+	android:paddingBottom="7dip"
+	android:paddingLeft="6dip"
+	android:paddingRight="6dip"
+	android:paddingTop="8dip" >
+	<ImageView
+		android:id="@+id/select_client_icon"
+		android:layout_width="16.0dp"
+		android:layout_height="16.0dp"
+		android:layout_alignBottom="@+id/select_client_clientname"
+		android:layout_alignTop="@+id/select_client_clientname"
+		android:layout_gravity="center_vertical"
+		android:layout_marginRight="4dp"
+		android:src="@drawable/client_icon" />
+	<TextView
+		android:id="@+id/select_client_clientname"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:layout_toRightOf="@+id/select_client_icon"
+		android:paddingTop="3dp"
+		android:singleLine="true"
+		android:text="This is a client"
+		android:textColor="@color/listitem_black"
+		android:textSize="@dimen/text_size_14"
+		android:textStyle="bold" />
+	<TextView
+		android:id="@+id/select_client_address"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/select_client_clientname"
+		android:layout_marginLeft="4dip"
+		android:textColor="@color/listitem_black"
+		android:textSize="@dimen/text_size_10" />
+</RelativeLayout>

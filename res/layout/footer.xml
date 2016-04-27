@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_linearlayout_footer"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/widget_bar_bg_n"
+	android:gravity="center_vertical"
+	android:orientation="horizontal" >
+	<RadioButton
+		android:id="@+id/inner_foot_radio_prev"
+		style="@style/footbar_radio"
+		android:drawableTop="@drawable/prev"
+		android:text="Prev"
+		android:textSize="10sp" />
+	<ImageView
+		style="@style/footbar_cutline"
+		android:src="@drawable/widget_bar_cut_off" />
+	<RadioButton
+		android:id="@+id/inner_foot_radio_next"
+		style="@style/footbar_radio"
+		android:drawableTop="@drawable/next"
+		android:text="Next"
+		android:textSize="10sp" />
+</LinearLayout>

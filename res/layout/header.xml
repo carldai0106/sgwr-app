@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/header"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/widget_head_bg"
+	android:gravity="center_vertical"
+	android:orientation="horizontal"
+	android:paddingLeft="6dip"
+	android:paddingRight="6dip" >
+	<ImageButton
+		android:id="@+id/inner_header_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left|center"
+		android:background="@drawable/left_arrow" />
+	<TextView
+		android:id="@+id/inner_header_title"
+		style="@style/inner_header_title"
+		android:layout_gravity="center"
+		android:text="Activity" />
+	<ProgressBar
+		android:id="@+id/inner_header_progress"
+		style="@style/loading_small"
+		android:layout_gravity="right|center"
+		android:layout_marginRight="5dip"
+		android:visibility="gone" />
+</FrameLayout>

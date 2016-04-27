@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="4dp" >
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:descendantFocusability="blocksDescendants"
+		android:paddingBottom="4dp" >
+		<CheckBox
+			android:id="@+id/chk_dt_status"
+			style="@style/checkbox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="10dp"
+			android:checked="true"
+			android:focusable="false"
+			android:text="RIBI Management Office" />
+		<TextView
+			android:id="@+id/chk_dt_text_datetime"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/layout_datetime"
+			android:layout_alignTop="@+id/layout_datetime"
+			android:text="Date &amp; Time" />
+		<LinearLayout
+			android:id="@+id/layout_datetime"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/chk_dt_status"
+			android:layout_toRightOf="@+id/chk_dt_text_datetime"
+			android:descendantFocusability="blocksDescendants"
+			android:orientation="horizontal" >
+			<EditText
+				android:id="@+id/chk_dt_edt_datetime"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="8"
+				android:clickable="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:inputType="text"
+				android:textSize="@dimen/text_size_14" />
+			<ImageButton
+				android:id="@+id/chk_dt_imgbtn_clear"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:layout_weight="1"
+				android:background="@drawable/all_corner_bg"
+				android:focusable="false"
+				android:src="@drawable/trash" />
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>

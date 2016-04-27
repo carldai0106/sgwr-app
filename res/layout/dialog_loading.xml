@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="15dp"
+	android:background="@drawable/dialog_frame_bg" >
+	<RelativeLayout
+		android:id="@+id/dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="4dp"
+		android:background="@drawable/dialog_title_bg" >
+		<TextView
+			android:id="@+id/loading_dialog_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:paddingBottom="8dp"
+			android:paddingTop="8dp"
+			android:text="Loading"
+			android:textColor="@color/text_color"
+			android:textSize="14sp" />
+		<ImageButton
+			android:id="@+id/loading_dialog_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="6dp"
+			android:background="@drawable/dialog_close_select"
+			android:padding="12dp" />
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/loading_dialog_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/dialog_title"
+		android:gravity="center_vertical|center_horizontal"
+		android:orientation="horizontal"
+		android:paddingBottom="30dip"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		android:paddingTop="20dip" >
+		<View
+			android:id="@+id/loading_dialog_progress"
+			android:layout_width="49dip"
+			android:layout_height="49dip"
+			android:layout_gravity="center"
+			android:background="@anim/loading_middle" />
+		<TextView
+			android:id="@+id/loading_dialog_desc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dip"
+			android:text="Please wait a moment"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size_14" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listview_item_bg"
+	android:descendantFocusability="blocksDescendants"
+	android:padding="6.0dp" >
+	<TextView
+		android:id="@+id/activity_listitem_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="6.0dp"
+		android:singleLine="true"
+		android:text="This is a activity title"
+		android:textColor="@color/listitem_black"
+		android:textSize="@dimen/text_size_16" />
+	<LinearLayout
+		android:id="@+id/activity_listitem_left_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/activity_listitem_title"
+		android:layout_marginBottom="4.0dp"
+		android:orientation="horizontal" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="4.0dp"
+			android:src="@drawable/location" />
+		<TextView
+			android:id="@+id/activity_listitem_location"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="光彩新天地13A5"
+			android:textColor="@color/listitem_gray"
+			android:textSize="@dimen/text_size_10" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/activity_listitem_right_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/activity_listitem_title"
+		android:layout_marginBottom="4.0dp"
+		android:orientation="horizontal" >
+		<ImageView
+			android:id="@+id/activity_listitem_flag"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="8.0dp"
+			android:src="@drawable/small_inactive" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/activity_listitem_left_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/activity_listitem_left_1"
+		android:layout_marginBottom="4.0dp"
+		android:layout_marginRight="8.0dp"
+		android:orientation="horizontal" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="4.0dp"
+			android:src="@drawable/authors" />
+		<TextView
+			android:id="@+id/activity_listitem_author"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="光彩新天地13A5"
+			android:textColor="@color/listitem_gray"
+			android:textSize="@dimen/text_size_10" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/activity_listitem_right_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/activity_listitem_right_1"
+		android:orientation="horizontal" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="4.0dp"
+			android:src="@drawable/occurred_date" />
+		<TextView
+			android:id="@+id/activity_listitem_occurred_date"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="2014-02-20 14:34"
+			android:textColor="@color/listitem_gray"
+			android:textSize="@dimen/text_size_10" />
+	</LinearLayout>
+</RelativeLayout>

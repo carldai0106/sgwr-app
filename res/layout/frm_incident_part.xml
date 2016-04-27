@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<RelativeLayout
+		android:id="@+id/layout_activity_part"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="@dimen/space_8"
+		android:paddingLeft="@dimen/space_4"
+		android:paddingRight="@dimen/space_4"
+		android:paddingTop="@dimen/space_6" >
+		<TextView
+			android:id="@+id/text_incident_reporter"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_incident_reporter"
+			android:layout_alignTop="@+id/edit_incident_reporter"
+			android:text="@string/person_completing_report" />
+		<EditText
+			android:id="@+id/edit_incident_reporter"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_reporter"
+			android:inputType="text" />
+		<TextView
+			android:id="@+id/text_incident_incidenttype"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/spinner_incident_incidenttype"
+			android:layout_alignTop="@+id/spinner_incident_incidenttype"
+			android:text="@string/type_of_incident" />
+		<Spinner
+			android:id="@+id/spinner_incident_incidenttype"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_incident_reporter"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_incidenttype" />
+		<TextView
+			android:id="@+id/text_incident_subtype"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/spinner_incident_subtype"
+			android:layout_alignTop="@+id/spinner_incident_subtype"
+			android:text="@string/sub_category" />
+		<Spinner
+			android:id="@+id/spinner_incident_subtype"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_incident_incidenttype"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_subtype" />
+		<TextView
+			android:id="@+id/text_incident_status"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/spinner_incident_status"
+			android:layout_alignTop="@+id/spinner_incident_status"
+			android:text="@string/incident_status" />
+		<Spinner
+			android:id="@+id/spinner_incident_status"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_incident_subtype"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_status" />
+		<TextView
+			android:id="@+id/text_incident_priority"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/spinner_incident_priority"
+			android:layout_alignTop="@+id/spinner_incident_priority"
+			android:text="@string/priority" />
+		<Spinner
+			android:id="@+id/spinner_incident_priority"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_incident_status"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_priority" />
+		<TextView
+			android:id="@+id/text_activity_occurred_datetime"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/edit_incident_occurred_datetime"
+			android:layout_alignTop="@+id/edit_incident_occurred_datetime"
+			android:text="@string/incident_occurred_on" />
+		<EditText
+			android:id="@+id/edit_incident_occurred_datetime"
+			style="@style/single_edit_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_incident_priority"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_activity_occurred_datetime"
+			android:clickable="true"
+			android:focusable="false"
+			android:inputType="text" />
+		<TextView
+			android:id="@+id/text_incident_witness_status"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/spinner_incident_witness_status"
+			android:layout_alignTop="@+id/spinner_incident_witness_status"
+			android:text="@string/witness_status" />
+		<Spinner
+			android:id="@+id/spinner_incident_witness_status"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edit_incident_occurred_datetime"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/text_incident_witness_status" />
+		<Button
+			android:id="@+id/btn_incident_who_involved"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_incident_witness_status"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/who_involved"
+			android:textColor="@color/text_color" />
+		<Button
+			android:id="@+id/btn_incident_who_involved_details"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_incident_who_involved"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/who_involved_details"
+			android:textColor="@color/text_color" />
+		<Button
+			android:id="@+id/btn_incident_notify"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_incident_who_involved_details"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/select_notifications"
+			android:textColor="@color/text_color" />
+		<Button
+			android:id="@+id/btn_incident_affilication"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_incident_notify"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/select_affilications"
+			android:textColor="@color/text_color" />
+		<Button
+			android:id="@+id/btn_incident_response"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_incident_affilication"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/select_emergency_response"
+			android:textColor="@color/text_color" />
+		<Button
+			android:id="@+id/btn_incident_othercnd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_incident_response"
+			android:layout_marginBottom="@dimen/space_8"
+			android:background="@drawable/button_lablel_select"
+			android:text="@string/other_conditions"
+			android:textColor="@color/text_color" />
+	</RelativeLayout>
+</ScrollView>

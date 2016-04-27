@@ -1,0 +1,183 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppBaseTheme" parent="android:Theme.Light"></style>
+	<style name="Animation" />
+	<style name="Animation.Translucent" parent="@style/Animation">
+		<item name="android:windowEnterAnimation">@anim/translucent_zoom_out</item>
+		<item name="android:windowExitAnimation">@anim/translucent_zoom_exit</item>
+	</style>
+	<style name="Theme.NoTitleBar" parent="@android:style/Theme.NoTitleBar">
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+	<style name="Theme.HalfTranslucent" parent="@android:style/Theme.Translucent">
+		<item name="android:windowBackground">@color/half_transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowAnimationStyle">@style/Animation.Translucent</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+	<style name="Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@color/full_transparent</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	<style name="MaskDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@color/full_transparent</item>
+		<!-- 边框 -->
+		<item name="android:windowIsFloating">true</item>
+		<!-- 是否悬浮在activity上   false: dialog 布满整个屏幕， true，显示指定大小 -->
+		<item name="android:windowIsTranslucent">true</item>
+		<!-- 半透明 -->
+		<item name="android:windowNoTitle">true</item>
+		<!-- 无标题   false 的时候，在没有给定title的情况下，会比true的情况显示要长（title显示了，没有内容而已）， -->
+		<!-- <item name="android:windowBackground">@drawable/skin2_dialog_bottom</item> -->
+		<!-- 背景透明 背景颜色 -->
+		<item name="android:backgroundDimEnabled">true</item>
+		<!-- 模糊 false： 整个界面不会有遮罩层 -->
+		<item name="android:backgroundDimAmount">0.6</item>
+		<!-- 灰度  当android:backgroundDimEnabled=true时，这个参数才有用，值越大，遮罩层颜色越深。 -->
+		<!-- <item name="android:windowAnimationStyle">@style/dialog_animation</item> -->
+		<!-- 弹出或者进入时的动画效果 -->
+		<item name="android:windowContentOverlay">@null</item>
+		<!-- 对话框是否有遮盖 -->
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<!-- 背景缓存颜色 -->
+	</style>
+	<style name="dialog_animation">
+		<item name="android:windowEnterAnimation">@anim/fading_in</item>
+		<item name="android:windowExitAnimation">@anim/fading_out</item>
+	</style>
+	<style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading_small</item>
+		<item name="android:layout_width">21dip</item>
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	<style name="head_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/head_text</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#ffffffff</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+	</style>
+	<style name="inner_header_title">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+		<item name="android:textColor">@color/head_text</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#ffffffff</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+	</style>
+	<!-- footer -->
+	<style name="footbar">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textSize">@dimen/text_size_10</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:gravity">center</item>
+		<item name="android:button">@null</item>
+		<item name="android:paddingTop">@dimen/space_1</item>
+		<item name="android:paddingBottom">@dimen/space_3</item>
+	</style>
+	<style name="footbar_radio" parent="footbar">
+		<item name="android:background">@drawable/widget_bar_bg</item>
+		<item name="android:padding">0dp</item>
+	</style>
+	<style name="footbar_image">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:background">@drawable/widget_bar_bg</item>
+		<item name="android:clickable">true</item>
+	</style>
+	<style name="footbar_cutline">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:textSize">16.0sp</item>
+		<item name="android:textColor">@drawable/checkbox_text_color</item>
+		<item name="android:paddingLeft">28.0dp</item>
+		<item name="android:button">@drawable/button_checkbox</item>
+	</style>
+	<style name="single_label" parent="@android:style/Widget.TextView">
+		<item name="android:background">@drawable/label_bg</item>
+		<item name="android:gravity">center_vertical|right</item>
+		<item name="android:minWidth">80dp</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">4dp</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="single_edit_text" parent="@android:style/Widget.EditText">
+		<item name="android:paddingLeft">4dp</item>
+		<item name="android:paddingRight">4dp</item>
+		<item name="android:saveEnabled">true</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:background">@drawable/edit_select</item>
+	</style>
+	<style name="spinner" parent="@android:style/Widget.Spinner">
+		<item name="android:background">@drawable/spinner_select</item>
+		<item name="android:paddingLeft">@dimen/space_8</item>
+	</style>
+	<style name="multi_edit_text" parent="@android:style/Widget.EditText">
+		<item name="android:autoLink">web</item>
+		<item name="android:background">@drawable/edittext_select_style</item>
+		<item name="android:lines">5</item>
+		<item name="android:gravity">left|top</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="multi_edit_text_2" parent="@android:style/Widget.EditText">
+		<item name="android:autoLink">web</item>
+		<item name="android:background">@drawable/edittext_select_style</item>
+		<item name="android:gravity">left|top</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:paddingLeft">30dp</item>
+		<item name="android:button">@drawable/login_checkbox_select</item>
+		<item name="android:layout_marginLeft">40dp</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+	</style>
+	<style name="listview">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:divider">#cccccc</item>
+		<item name="android:dividerHeight">1.0dp</item>
+		<item name="android:fadingEdge">none</item>
+		<item name="android:scrollingCache">false</item>
+	</style>
+	<style name="widget_listview">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:listSelector">@drawable/listview_item_select</item>
+		<item name="android:divider">@drawable/listview_divider_line</item>
+		<item name="android:dividerHeight">1.0dp</item>
+		<item name="android:fadingEdge">none</item>
+		<item name="android:scrollingCache">false</item>
+	</style>
+</resources>

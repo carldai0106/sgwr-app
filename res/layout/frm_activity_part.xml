@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white" >
+		<RelativeLayout
+			android:id="@+id/layout_activity_part"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/space_8"
+			android:paddingLeft="@dimen/space_4"
+			android:paddingRight="@dimen/space_4"
+			android:paddingTop="@dimen/space_6" >
+			<TextView
+				android:id="@+id/text_activity_status"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_status"
+				android:layout_alignTop="@+id/spinner_activity_status"
+				android:text="@string/status" />
+			<Spinner
+				android:id="@+id/spinner_activity_status"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_status" />
+			<CheckBox
+				android:id="@+id/chk_activity_allow"
+				style="@style/checkbox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/spinner_activity_status"
+				android:layout_below="@+id/spinner_activity_status"
+				android:layout_marginBottom="@dimen/space_8"
+				android:checked="true"
+				android:text="@string/activity_allow" />
+			<TextView
+				android:id="@+id/text_activity_location"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_location"
+				android:layout_alignTop="@+id/spinner_activity_location"
+				android:text="@string/location" />
+			<Spinner
+				android:id="@+id/spinner_activity_location"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/chk_activity_allow"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_location" >
+			</Spinner>
+			<TextView
+				android:id="@+id/text_activity_zone"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_zone"
+				android:layout_alignTop="@+id/spinner_activity_zone"
+				android:text="@string/zone" />
+			<Spinner
+				android:id="@+id/spinner_activity_zone"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinner_activity_location"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_zone" >
+			</Spinner>
+			<TextView
+				android:id="@+id/text_activity_area"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_area"
+				android:layout_alignTop="@+id/spinner_activity_area"
+				android:text="@string/area" />
+			<Spinner
+				android:id="@+id/spinner_activity_area"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinner_activity_zone"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_area" >
+			</Spinner>
+			<TextView
+				android:id="@+id/text_activity_assignedpost"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_assignedpost"
+				android:layout_alignTop="@+id/spinner_activity_assignedpost"
+				android:text="@string/assigned_post" />
+			<Spinner
+				android:id="@+id/spinner_activity_assignedpost"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinner_activity_area"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_assignedpost" >
+			</Spinner>
+			<TextView
+				android:id="@+id/text_activity_shifttime"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/spinner_activity_shifttime"
+				android:layout_alignTop="@+id/spinner_activity_shifttime"
+				android:text="@string/shift_time" />
+			<Spinner
+				android:id="@+id/spinner_activity_shifttime"
+				style="@style/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinner_activity_assignedpost"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_activity_shifttime" >
+			</Spinner>
+			<Button
+				android:id="@+id/btn_activity_photo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinner_activity_shifttime"
+				android:layout_marginBottom="@dimen/space_8"
+				android:background="@drawable/button_lablel_select"
+				android:text="Take &amp; Picker Photo"
+				android:textColor="@color/text_color" />
+			<Button
+				android:id="@+id/btn_activity_photo_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/btn_activity_photo"
+				android:layout_marginBottom="@dimen/space_8"
+				android:background="@drawable/button_lablel_select"
+				android:text="Photo List"
+				android:textColor="@color/text_color" />
+		</RelativeLayout>
+		<EditText
+			android:id="@+id/edit_activity_brief"
+			style="@style/multi_edit_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/layout_activity_part"
+			android:hint="@string/brief_description" />
+	</RelativeLayout>
+</ScrollView>

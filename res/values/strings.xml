@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">BCS Tracker</string>
+	<string name="action_settings">Settings</string>
+	<string name="hello_world">Hello world!</string>
+	<!-- Login Screen -->
+	<string name="login_username">User Name :</string>
+	<string name="login_username_hint">Please enter user name</string>
+	<string name="login_password">Password :</string>
+	<string name="login_password_hint">Please enter password</string>
+	<string name="login_rememberMe">Remember Me</string>
+	<string name="login_btnlogin">Login</string>
+	<string name="login_btnset">Set URL</string>
+	<string name="login_errormsg">Bad User Name or Password</string>
+	<!-- url config -->
+	<string name="config_website">Website :</string>
+	<string name="config_butset">Save</string>
+	<string name="config_url">Please enter website url</string>
+	<!-- client screen -->
+	<string name="select_client_address">Address</string>
+	<!-- pull to refresh -->
+	<string name="pull_to_refresh_pull_label">Drop-down to refresh</string>
+	<string name="pull_to_refresh_release_label">Release to refresh</string>
+	<string name="pull_to_refresh_refreshing_label">Loading...</string>
+	<string name="pull_to_refresh_tap_label">Drop-down to refresh</string>
+	<string name="pull_to_refresh_update">Lastest update：</string>
+	<!-- Exception message -->
+	<string name="network_not_connected">Network connected failed，please check your network.</string>
+	<string name="http_status_code_error">Http request expection, status code：%d.</string>
+	<string name="json_parser_failed">Parsed josn failed</string>
+	<string name="io_exception_error">IO Exception</string>
+	<string name="http_exception_error">Network expection</string>
+	<string name="socket_exception_error">Socket expection</string>
+	<string name="app_run_error">Application running exception</string>
+	<string name="server_exception_error">Server Exception</string>
+	<!-- loading -->
+	<string name="loading_more">Loading More</string>
+	<string name="loading">Loading···</string>
+	<string name="loading_full">Loaded all data</string>
+	<string name="loading_empty">No data to load</string>
+	<string name="loading_error">Loading error</string>
+	<!-- menu item title or head title -->
+	<string name="select_client">Select Client</string>
+	<string name="select_location">Select Location</string>
+	<string name="incident">Incident</string>
+	<!-- open closed all -->
+	<string name="incident_open">Open</string>
+	<string name="incident_closed">Closed</string>
+	<string name="incident_all">All</string>
+	<!-- incident item -->
+	<string name="created_date">Created Time</string>
+	<string name="occurred_date">Occurred Time</string>
+	<string name="hello">Hello World, Date!</string>
+	<!-- activity part -->
+	<string name="activity_allow">Allow</string>
+	<!-- send exception error -->
+	<string name="app_error">Application Error</string>
+	<string name="app_error_message">Sorry, There is a error, Program will be exit!\n
+    	Please submit error message, We will fix it as possible as we can! </string>
+	<string name="submit_report">Submit Report</string>
+	<string name="app_menu_surelogout">Are your sure you want to exit?</string>
+	<string name="sure">Sure</string>
+	<string name="cancle">Cancle</string>
+	<!-- activity part -->
+	<string name="status">Status</string>
+	<string name="location">Location</string>
+	<string name="zone">Zone</string>
+	<string name="area">Area</string>
+	<string name="assigned_post">Assigned Post</string>
+	<string name="shift_time">Shift Time</string>
+	<string name="brief_description">Brief Description</string>
+	<string name="person_completing_report">Person Completing Report</string>
+	<string name="type_of_incident">Type of incident</string>
+	<string name="sub_category">Sub Category</string>
+	<string name="incident_status">Incident Status</string>
+	<string name="priority">Priority</string>
+	<string name="incident_occurred_on">Incident Occurred on</string>
+	<string name="select_notifications">Select Notifications</string>
+	<string name="affiliation">Affiliation</string>
+	<string name="select_emergency_response">Select Emergency Response</string>
+	<string name="select_affilications">Select Affilications</string>
+	<string name="please_select_one">Please select one</string>
+	<string name="witness_status">Witness Status</string>
+	<string name="who_involved">Who Involved</string>
+	<string name="description_of_observed_alleged_injury">Description of Observed/Alleged Injury</string>
+	<string name="where_did_it_happen_">Where Did It Happen?</string>
+	<string name="what_caused_the_incident_">What Caused The Incident?</string>
+	<string name="what_happened_">What Happened?</string>
+	<string name="contact_type">Contact Type</string>
+	<string name="set_recipient_emails_for_incident_notifications">Set recipient emails for incident notifications</string>
+	<string name="other_conditions">Other Conditions</string>
+	<string name="condition_type">Condition Type</string>
+	<string name="description">Description</string>
+	<string name="cancel">Cancel</string>
+	<string name="ok">OK</string>
+	<string name="incident_reviewed_and_approved_by">Incident Reviewed and Approved By</string>
+	<string name="who_involved_details">Who involved details</string>
+	<string name="select_contact_type">Select Contact Type</string>
+</resources>

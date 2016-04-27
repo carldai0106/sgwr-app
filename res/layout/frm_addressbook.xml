@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/activity_bg"
+	android:focusable="true"
+	android:focusableInTouchMode="true" >
+	<include
+		android:id="@+id/layout_top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		layout="@layout/header" />
+	<include
+		android:id="@+id/layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		layout="@layout/footer_save" />
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/layout_bottom"
+		android:layout_below="@+id/layout_top" >
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/space_8"
+			android:paddingLeft="@dimen/space_4"
+			android:paddingRight="@dimen/space_4"
+			android:paddingTop="@dimen/space_6" >
+			<TextView
+				android:id="@+id/text_addrbook_firstname"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_firstname"
+				android:layout_alignTop="@+id/edit_addrbook_firstname"
+				android:text="First Name" />
+			<EditText
+				android:id="@+id/edit_addrbook_firstname"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_firstname" />
+			<TextView
+				android:id="@+id/text_addrbook_lastname"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_lastname"
+				android:layout_alignTop="@+id/edit_addrbook_lastname"
+				android:text="Last Name" />
+			<EditText
+				android:id="@+id/edit_addrbook_lastname"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_firstname"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_lastname" />
+			<CheckBox
+				android:id="@+id/chk_addrbook_sendemail"
+				style="@style/checkbox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/text_addrbook_lastname"
+				android:layout_below="@+id/edit_addrbook_lastname"
+				android:layout_marginBottom="@dimen/space_8"
+				android:checked="true"
+				android:text="Send Email" />
+			<TextView
+				android:id="@+id/text_addrbook_email"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_email"
+				android:layout_alignTop="@+id/edit_addrbook_email"
+				android:text="Email" />
+			<EditText
+				android:id="@+id/edit_addrbook_email"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textEmailAddress"
+				android:layout_below="@+id/chk_addrbook_sendemail"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_email" />
+			<TextView
+				android:id="@+id/text_addrbook_company"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_company"
+				android:layout_alignTop="@+id/edit_addrbook_company"
+				android:text="Company" />
+			<EditText
+				android:id="@+id/edit_addrbook_company"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_email"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_company" />
+			<TextView
+				android:id="@+id/text_addrbook_title"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_title"
+				android:layout_alignTop="@+id/edit_addrbook_title"
+				android:text="Title" />
+			<EditText
+				android:id="@+id/edit_addrbook_title"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_company"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_title" />
+			
+			<TextView
+				android:id="@+id/text_addrbook_state"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_state"
+				android:layout_alignTop="@+id/edit_addrbook_state"
+				android:text="State" />
+			<EditText
+				android:id="@+id/edit_addrbook_state"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_title"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_state" />
+			<TextView
+				android:id="@+id/text_addrbook_city"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_city"
+				android:layout_alignTop="@+id/edit_addrbook_city"
+				android:text="City" />
+			<EditText
+				android:id="@+id/edit_addrbook_city"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_state"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_city" />
+			<TextView
+				android:id="@+id/text_addrbook_zipcode"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_zipcode"
+				android:layout_alignTop="@+id/edit_addrbook_zipcode"
+				android:text="Zipcode" />
+			<EditText
+				android:id="@+id/edit_addrbook_zipcode"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_city"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_zipcode" />
+			<TextView
+				android:id="@+id/text_addrbook_mobile"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_mobile"
+				android:layout_alignTop="@+id/edit_addrbook_mobile"
+				android:text="Mobile" />
+			<EditText
+				android:id="@+id/edit_addrbook_mobile"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_zipcode"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_mobile" />
+			<TextView
+				android:id="@+id/text_addrbook_hometel"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_hometel"
+				android:layout_alignTop="@+id/edit_addrbook_hometel"
+				android:text="Home Tel." />
+			<EditText
+				android:id="@+id/edit_addrbook_hometel"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_mobile"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_hometel" />
+			<TextView
+				android:id="@+id/text_addrbook_worktel"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_worktel"
+				android:layout_alignTop="@+id/edit_addrbook_worktel"
+				android:text="Work Tel." />
+			<EditText
+				android:id="@+id/edit_addrbook_worktel"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_hometel"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_worktel" />
+			<TextView
+				android:id="@+id/text_addrbook_othertel"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_othertel"
+				android:layout_alignTop="@+id/edit_addrbook_othertel"
+				android:text="Work Tel." />
+			<EditText
+				android:id="@+id/edit_addrbook_othertel"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_worktel"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_othertel" />
+			<TextView
+				android:id="@+id/text_addrbook_addr1"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_addr1"
+				android:layout_alignTop="@+id/edit_addrbook_addr1"
+				android:text="Address1" />
+			<EditText
+				android:id="@+id/edit_addrbook_addr1"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_othertel"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_addr1" />
+			<TextView
+				android:id="@+id/text_addrbook_addr2"
+				style="@style/single_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/edit_addrbook_addr2"
+				android:layout_alignTop="@+id/edit_addrbook_addr2"
+				android:text="Address2" />
+			<EditText
+				android:id="@+id/edit_addrbook_addr2"
+				style="@style/single_edit_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_addr1"
+				android:layout_marginBottom="@dimen/space_8"
+				android:layout_toRightOf="@+id/text_addrbook_addr2" />
+			<EditText
+				android:id="@+id/edit_addrbook_otherinfo"
+				style="@style/multi_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edit_addrbook_addr2"
+				android:hint="Other Info." />
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

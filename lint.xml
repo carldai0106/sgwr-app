@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ShowToast">
+        <ignore path="src/com/sgwr/app/ui/Login.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/sgwr/app/bean/ClientInfo.java" />
+        <ignore path="src/com/sgwr/app/bean/UserInfo.java" />
+    </issue>
+</lint>

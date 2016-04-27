@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical|center_horizontal"
+	android:layout_margin="10dp"
+	android:background="@drawable/all_corner_single_color_bg"	
+	android:padding="0dp" >
+	<RelativeLayout
+		android:id="@+id/list_chk_date_title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@drawable/single_lable_bg" >
+		<TextView
+			android:id="@+id/incidentcnd_title"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:text="Date &amp; Time Picker"
+			android:textColor="@color/black" >
+		</TextView>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="#dedede" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/layout_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/list_chk_date_title_bar"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginTop="10dp" >
+		<TextView
+			android:id="@+id/incidentcnd_text_cndtype"
+			style="@style/single_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/incidentcnd_spinner_cndtype"
+			android:layout_alignTop="@+id/incidentcnd_spinner_cndtype"
+			android:text="@string/condition_type" />
+		<Spinner
+			android:id="@+id/incidentcnd_spinner_cndtype"
+			style="@style/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/space_8"
+			android:layout_toRightOf="@+id/incidentcnd_text_cndtype" />
+		<EditText
+			android:id="@+id/incidnetcnd_edit_desc"
+			style="@style/multi_edit_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/incidentcnd_spinner_cndtype"
+			android:hint="@string/description" />
+	</RelativeLayout>
+	<LinearLayout		
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout_content"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal"
+		android:paddingBottom="8dp"
+		android:paddingTop="8dp" >
+		<Button
+			android:id="@+id/incidentcnd_btn_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button"
+			android:paddingBottom="6dp"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:paddingTop="6dp"
+			android:text="@string/cancel"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+		<Button
+			android:id="@+id/incident_btn_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:background="@drawable/button"
+			android:paddingBottom="6dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:paddingTop="6dp"
+			android:text="@string/ok"
+			android:textColor="@color/text_color"
+			android:textSize="12sp" />
+	</LinearLayout>
+</RelativeLayout>
