@@ -22,10 +22,10 @@ public class SgwrTest extends AndroidTestCase {
 	      mailInfo.setMailServerHost("smtp.126.com"); 
 	      mailInfo.setMailServerPort("25"); 
 	      mailInfo.setValidate(true); 
-	      mailInfo.setUserName("bcstracker@126.com"); 
-	      mailInfo.setPassword("bcsint13a5");//您的邮箱密码 
-	      mailInfo.setFromAddress("bcstracker@126.com"); 
-	      mailInfo.setToAddress("carldai@bcsint.com"); 
+	      mailInfo.setUserName("xxx@126.com"); 
+	      mailInfo.setPassword("xx");//您的邮箱密码 
+	      mailInfo.setFromAddress("xxx@126.com"); 
+	      mailInfo.setToAddress("xx@xx.com"); 
 	      mailInfo.setSubject("设置邮箱标题"); 
 	      mailInfo.setContent("设置邮箱内容");	      
 	      //这个类主要来发送邮件 

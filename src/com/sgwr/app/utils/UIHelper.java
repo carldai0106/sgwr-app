@@ -114,11 +114,11 @@ public class UIHelper {
 						mailInfo.setMailServerHost("smtp.126.com");
 						mailInfo.setMailServerPort("25");
 						mailInfo.setValidate(true);
-						mailInfo.setUserName("bcstracker@126.com");
-						mailInfo.setPassword("bcsint13a5");// 您的邮箱密码
-						mailInfo.setFromAddress("bcstracker@126.com");
-						mailInfo.setToAddress("carldai@bcsint.com");
-						mailInfo.setSubject("BCSTRACKER Crash Report");
+						mailInfo.setUserName("xxx@126.com");
+						mailInfo.setPassword("xx");// 您的邮箱密码
+						mailInfo.setFromAddress("xxx@126.com");
+						mailInfo.setToAddress("carldai@xx.com");
+						mailInfo.setSubject("xxx Crash Report");
 						mailInfo.setContent(crashReport);
 						// 这个类主要来发送邮件
 						MultiMailSender sms = new MultiMailSender();
